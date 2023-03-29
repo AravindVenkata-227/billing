@@ -1,0 +1,154 @@
+.board-content {
+    padding: 25px 40px;
+    display: grid;
+    grid-gap: 30px;
+}
+
+.board-first {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
+}
+
+.board-middle {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 55% 40%;
+}
+
+.card-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px rgba(76, 76, 76, 0.1);
+    transition: all 0.5s;
+}
+
+.card-container:hover {
+    transform: scale(0.99);
+    box-shadow: 0px 5px 10px rgba(76, 76, 76, 0);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 15px 30px 0;
+}
+
+.bestseller-table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.bestseller-table tr:nth-child(odd) {
+    background-color: #FCFBFB;
+}
+
+.board-heading {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
+.bestseller-table-head {
+    font-size: 0.75rem;
+    color: #A7A7A7;
+}
+
+.bestseller-table .bestseller-table-head tr {
+    background-color: white;
+}
+
+.bestseller-table-body {
+    font-size: 0.8rem;
+}
+
+.bestseller-table tr {
+    width: fit-content;
+}
+
+.bestseller-table td {
+    font-size: 0.75rem;
+    padding: 20px 30px;
+}
+
+.bestseller-table tr:last-child {
+    padding-right: 0;
+}
+
+.more {
+    font-size: 0.8rem;
+    color: #000;
+}
+
+.summary-header {
+    font-size: 0.9rem;
+}
+
+.summary-container {
+    padding: 15px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.summary-row {
+    display: grid;
+    align-items: center;
+    grid-gap: 10px;
+    grid-template-columns: 10% 70% 10%;
+}
+
+.summary-row-text {
+    color: #505050;
+    font-size: 0.8rem;
+}
+
+.summary-row-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-bg-1 {
+    background-color: #DBFAFA;
+}
+
+.icon-bg-2 {
+    background-color: #DBE2FA;
+}
+
+.icon-bg-3 {
+    background-color: #E1FADB;
+}
+
+.icon-bg-4 {
+    background-color: #FADBDF;
+}
+
+.icon-bg-5 {
+    background-color: #FAECDB;
+}
+
+.icon-bg-6 {
+    background-color: #F7E2FF;
+}
+
+.summary-row-value {
+    font-weight: 1rem;
+    font-weight: bold;
+}
+
+.board-last {
+    display: flex;
+    justify-content: space-between;
+}

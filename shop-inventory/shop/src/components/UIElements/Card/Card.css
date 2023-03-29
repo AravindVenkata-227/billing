@@ -1,0 +1,94 @@
+.card {
+    padding: 30px 50px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    border-radius: 5px;
+}
+
+.card-heading {
+    margin: 0;
+    text-align: center;
+}
+
+.card-btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-content {
+    margin: 20px 0;
+}
+
+.card-btns button {
+    padding: 7px 24px;
+    border: none;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.card-save {
+    background-color: #39B71C;
+    color: #fff;
+}
+
+.card-close {
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0;
+}
+
+.form-item {
+    padding: 8px;
+    outline: none;
+    background-color: #F9F9F9;
+    border: 2px solid #D2D2D2;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+
+
+.form-group label {
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+}
+
+.form-item:focus {
+    border-color: #4C6FE6;
+}
+
+
+.input-error {
+    color: #ED374E;
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+
+.form-price-container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.form-price-container input {
+    width: 100%;
+}
+
+textarea.form-item {
+    height: 100px;
+    resize: none;
+}
+
+.error-border {
+    border: 2px solid #ED374E !important;
+}

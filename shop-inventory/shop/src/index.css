@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'poppins',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F5F5;
+  max-width: 1600px;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(0.95);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.company {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+
+.company-name {
+  margin-left: 15px;
+}
+
+.desktop-only {
+  display: none;
+
+}
+
+@media screen and (max-width:1025px) {
+  .desktop-only {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+    z-index: 1000000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 30px;
+    text-align: center;
+  }
+}

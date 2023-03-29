@@ -1,0 +1,128 @@
+.home {
+    display: grid;
+    grid-template-columns: 17% 83%;
+}
+
+
+.dataTables_wrapper {
+    margin: 20px 40px;
+    font-size: 0.8rem;
+
+}
+
+.table-content {
+    width: 100% !important;
+    border: none !important;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.table-heading {
+    background-color: #fff;
+    font-size: 0.75rem;
+    color: #A7A7A7;
+    height: 50px;
+}
+
+.table-heading td {
+    border: none !important;
+}
+
+.table-content tbody td {
+    padding: 20px !important;
+    font-size: 0.85rem;
+}
+
+.odd {
+    background-color: #FCFBFB !important;
+}
+
+.sorting {
+    width: auto !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    padding: 7px !important;
+    outline: none !important;
+    background-color: #fff !important;
+    border-radius: 5px !important;
+    border: 1px solid #ddd0d0 !important;
+}
+
+.modify-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.quantity {
+    width: 60px;
+    border: 2px solid rgb(167, 167, 167);
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.quantity:focus {
+    border: 2px solid #00bcd4;
+}
+
+.dataTables_scrollBody {
+    margin-bottom: 20px;
+}
+
+
+.current-state {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.current-state.data-success {
+    color: rgb(0, 187, 0);
+}
+
+.current-state.failure {
+    color: #ed374e;
+}
+
+.modal-wrapper .loading {
+    transform: translateX(-50%);
+}
+
+.product-image {
+    width: 35px;
+    cursor: pointer;
+}
+
+.product-action {
+    display: flex;
+}
+
+.product-image-show {
+    max-width: 500px;
+}
+
+.image-show-container {
+    position: relative;
+}
+
+.close-image {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ed374e;
+    color: white;
+    font-size: 0.8em;
+    padding: 10px;
+    border-radius: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    align-items: center;
+}

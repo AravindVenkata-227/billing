@@ -1,0 +1,19 @@
+.top-nav {
+    background-color: white;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.nav-heading {
+    font-size: 1.05 rem;
+    font-weight: bold;
+}
+
+.nav-date {
+    margin-left: 40px;
+    font-size: 0.75rem;
+}

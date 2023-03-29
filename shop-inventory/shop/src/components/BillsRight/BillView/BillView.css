@@ -1,0 +1,149 @@
+.bills-view {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.bills-content {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 20px 0 30px;
+    border: 1px solid #e4e4e4;
+}
+
+.bills-heading {
+    margin: 0 0 10px;
+    text-align: center;
+    color: #000;
+}
+
+.colored {
+    color: #4C6FE6;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.bills-content::-webkit-scrollbar {
+    display: none;
+}
+
+.bills-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+
+.bills-table tbody {
+    font-size: 0.9rem;
+}
+
+.bills-table td {
+    font-size: 0.75rem;
+    padding: 20px 30px;
+}
+
+.bills-table thead td {
+    padding: 15px 20px;
+}
+
+
+.bills-table tbody tr:nth-child(even) {
+    background-color: #FCFBFB;
+}
+
+
+.bills-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bills-table thead {
+    position: sticky;
+    background-color: #4C6FE6;
+    top: 0;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.bills-close {
+    background-color: transparent;
+    border: none;
+    color: #ed1c24;
+}
+
+.total-items, .total-price {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.brand {
+    text-align: center;
+    font-size: 1.15em;
+    display: none;
+    margin: 5px auto;
+}
+
+.brand-address {
+    text-align: center;
+    font-size: 0.75em;
+    color: #494949;
+    display: none;
+    margin: 0 auto 30px;
+}
+
+
+.bill-info-data {
+    font-size: 0.75em;
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.print-button {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #ec407a;
+}
+
+.print-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.print-button-container .bill-data, .bill-data .colored, .bill-info-data .colored {
+    font-size: 0.85rem;
+}
+
+@media print {
+    .bill-table-main {
+        margin: 20px 30px;
+    }
+
+    .brand {
+        display: block;
+    }
+
+    .brand-address {
+        display: block;
+    }
+
+    .bill-info-data {
+        display: flex;
+    }
+
+    .bills-close {
+        display: none;
+    }
+
+    .bills-table thead {
+        background-color: #f0f0f0;
+        color: #000;
+    }
+}

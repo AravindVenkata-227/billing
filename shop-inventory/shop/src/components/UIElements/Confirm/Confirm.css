@@ -1,0 +1,40 @@
+.confirm-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px 20px;
+    max-width: 450px;
+}
+
+.confirm-text {
+    display: block;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 0.95em;
+    color: #242424;
+}
+
+.confirm-btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.confirm-btn {
+    border: none;
+    margin-right: 10px;
+    padding: 5px 12px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.confirm-btn:last-child {
+    margin-right: 0;
+}
+
+.confirm-btn.btn-yes {
+    background-color: #ED374E;
+}
+
+.confirm-btn.btn-no {
+    /* background-color: #ED374E; */
+    color: #000;
+}

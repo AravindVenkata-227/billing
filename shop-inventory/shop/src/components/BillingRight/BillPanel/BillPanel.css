@@ -1,0 +1,172 @@
+.bill-table-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 20px 0 30px;
+
+}
+
+.bill-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.bill-table-container::-webkit-scrollbar {
+    display: none;
+}
+
+.bill-table thead {
+    position: sticky;
+    top: 0;
+    font-size: 0.8rem;
+    color: rgb(12, 12, 12);
+    background-color: #f0f0f0;
+
+}
+
+.bill-table tbody {
+    font-size: 0.9rem;
+}
+
+.bill-table td {
+    font-size: 0.75rem;
+    padding: 20px 30px;
+}
+
+.bill-table thead td {
+    padding: 15px 20px;
+}
+
+
+.bill-table tbody tr:nth-child(even) {
+    background-color: #FCFBFB;
+}
+
+
+
+.bill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+}
+
+.customer-form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-search {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ddd0d0;
+    margin-right: 10px;
+    border-radius: 5px;
+
+}
+
+.customer-find {
+    background-color: #4C6FE6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 25px;
+
+}
+
+.customer-name {
+    margin: 20px 0 10px;
+    font-size: 0.9rem;
+}
+
+.customer-search-container label {
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+}
+
+.warning {
+    color: #ed1c24;
+    font-size: 0.75rem;
+}
+
+.danger-border {
+    border: 1px solid #ed1c24 !important;
+}
+
+.create-new {
+    border: none;
+    background-color: transparent;
+    color: #4C6FE6;
+    font-size: 0.8rem;
+    padding-left: 0;
+    transition: none;
+}
+
+.modal-wrapper:first-child {
+    z-index: 3000;
+}
+
+.modal-wrapper .notification {
+    transform: translateX(-50%);
+}
+
+.print-btn {
+    text-align: right;
+}
+
+.print-btn .customer-find {
+    background-color: #ec407a;
+    padding: 5px 10px;
+}
+
+.print-btn .customer-find:disabled {
+    background-color: #ff8ab1;
+}
+
+.print-btn .customer-find:disabled:hover {
+    transform: scale(1);
+}
+
+.brand {
+    text-align: center;
+    font-size: 1.15em;
+    display: none;
+    margin: 5px auto;
+}
+
+.brand-address {
+    text-align: center;
+    font-size: 0.75em;
+    color: #494949;
+    display: none;
+    margin: 0 auto 30px;
+}
+
+
+.bill-info-data {
+    font-size: 0.75em;
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+@media print {
+    .bill-table-main {
+        margin: 20px 30px;
+    }
+
+    .brand {
+        display: block;
+    }
+
+    .brand-address {
+        display: block;
+    }
+
+    .bill-info-data {
+        display: flex;
+    }
+}

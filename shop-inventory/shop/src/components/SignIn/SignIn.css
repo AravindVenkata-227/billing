@@ -1,0 +1,82 @@
+.sign-in {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    width: 320px;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+}
+
+.error {
+    color: #ED374E;
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.in-error {
+    margin: 5px 0 0;
+    text-align: left;
+}
+
+.error-border {
+    border: 2px solid #ED374E !important;
+}
+
+.sign-in .company {
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 15px;
+}
+
+.form-item {
+    padding: 8px;
+    outline: none;
+    background-color: #F9F9F9;
+    border: 2px solid #D2D2D2;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.form {
+    margin: 0 0 20px;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+}
+
+.form-item:focus {
+    border-color: #4C6FE6;
+}
+
+.sign-in-button {
+    background-color: #4C6FE6;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    color: #fff;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+
+.loader {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(76, 76, 76, 0.2);
+    padding: 15px 30px;
+    border-radius: 5px;
+    z-index: 99999;
+    font-size: 0.9rem;
+}

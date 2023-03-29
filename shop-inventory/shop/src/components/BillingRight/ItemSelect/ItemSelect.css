@@ -1,0 +1,81 @@
+.item-select {
+    height: 93%;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    padding: 20px 0;
+    width: 90%;
+    max-width: 1024px;
+    position: relative;
+}
+
+#example1.dataTable tfoot th {
+    border-top: 0;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border: 0 !important;
+}
+
+.item-select #products-table_filter {
+    margin-left: 30px;
+    width: 300px;
+    float: left;
+}
+
+.item-select #products-table_filter input {
+    width: 100%;
+}
+
+.item-select table {
+    table-layout: auto !important;
+}
+
+.dataTables_scroll {
+    position: relative;
+    overflow: auto;
+    max-height: 68vh;
+    /*the maximum height you want to achieve*/
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dataTables_scroll thead {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.item-modal-container .loading {
+    transform: translate(-50%, -50%);
+}
+
+.add-btn {
+    background: #407ef4;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+}
+
+.added {
+    background-color: #39B71C !important;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 0.85rem;
+    background-color: #ED374E;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
