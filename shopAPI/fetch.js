@@ -123,7 +123,7 @@ router.get('/items_in_stock', (req, res) => {
 })
 
 router.get('/items', (req, res) => {
-    connection.query("select item_id,item_name,category_name,ret_name,stock,wholesale,price,image from items I,retailer R,category C where I.ret_id = R.ret_id and I.cat_id = C.category_id ORDER BY item_name ASC", (error, results, fields) => {
+    connection.query("select DISTINCT item_id,item_name,category_name,ret_name,stock,wholesale,price,image from items I,retailer R,category C where I.ret_id = R.ret_id and I.cat_id = C.category_id ORDER BY item_name ASC", (error, results, fields) => {
         if (error) {
             return res.status(500).send({
                 results: "Failed to Fetch info" + error
