@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `category` (
-  `category_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL AUTO_INCREMENT,
   `category_name` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -52,7 +52,7 @@ INSERT INTO `category` (`category_id`, `category_name`) VALUES
 --
 
 CREATE TABLE `customer` (
-  `cust_id` int(11) NOT NULL,
+  `cust_id` int(11) NOT NULL AUTO_INCREMENT,
   `cust_name` varchar(30) DEFAULT NULL,
   `address` varchar(30) DEFAULT NULL,
   `mobile_no` bigint(20) DEFAULT NULL,
